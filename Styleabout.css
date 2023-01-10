@@ -1,0 +1,38 @@
+.about{
+    width: 100%;
+    padding: 78px 0px;
+    background-color: bisque;
+
+}
+
+.about-text{
+    width: 550;
+
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-text h1{
+    color: black;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.about-text h5{
+    color: black;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.about-text p{
+    color: maroon;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
