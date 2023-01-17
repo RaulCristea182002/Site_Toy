@@ -1,0 +1,41 @@
+body {
+    background-color: bisque;
+  }
+table{
+    width: 400px;
+   }
+  
+   th,caption {
+    text-align: left;
+   }
+   table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+   }
+
+   th,td{
+   padding: 10px;
+   }
+   tr:nth-child(even)
+   {
+    background-color: white;
+   }
+   tr:nth-child(odd)
+   {
+    background-color: beige;
+   }
+   table {
+    margin: 0 auto;
+    width: 80%;
+  }
+  caption{
+    text-align: center;
+  margin: 10px;
+  color : black;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
