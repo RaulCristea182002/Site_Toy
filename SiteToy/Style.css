@@ -1,18 +1,3 @@
-Copy code
-body {
-  margin: 0;
-  padding: 0;
-  background-color: black;
-  background-size: cover;
-  background-position: center;
-  font-family: sans-serif;
-}
-
-h1{
-  margin: 0;
-  padding: 0 0 20px;
-  text-align: center;
-}
 
 
 .login p{
@@ -63,38 +48,141 @@ font-weight: bold;
   position: absolute;
 }
 
-.header{
-  width: 100%;
-  height: 100vh;
-  background: bisque;
-  padding-left: 11%;
-  padding-right: 8%;
-  position: relative;
-  
-
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-.sus{
+
+.header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.main-content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 30px 0 15px;
-  border-bottom: 1px solid white;
-
+  padding: 1em;
 }
-.sus ul li{
-  list-style: none;
+
+.featured-toy {
+  width: 65%;
+  text-align: center;
+  padding: 1em;
+}
+
+.featured-toy img {
+  width: 20%;
+}
+
+.toy-categories {
+  width: 30%;
+  padding: 1em;
+}
+
+.toy-categories h2 {
+  text-align: center;
+}
+.category {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.category img {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.category h3 {
+  margin: 1em 0;
+}
+
+.category-link {
   display: inline-block;
-  margin-right: 30px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-
-}
-.sus ul li a{
+  padding: 0.5em 1em;
+  background-color: #4CAF50;
+  color: white;
   text-decoration: none;
-  color: black;
-  font-size: 15px;
+  border-radius: 5px;
 }
 
+.category-link:hover {
+  background-color: #3e8e41;
+}
 
+.cta-button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1em;
+}
+
+.cta-button:hover {
+  background-color: #3e8e41;
+}
+
+.footer {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}  
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+.navigation a:hover {
+  background-color: #3e8e41;
+}
+
+.header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.toys-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.toy {
+  width: 30%;
+  text-align: center;
+  padding: 1em;
+}
+
+.toy img {
+  width: 30%;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1em;
+}
+
+.cta-button:hover {
+  background-color: #3e8e41;
+}
 
  

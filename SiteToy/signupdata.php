@@ -1,22 +1,41 @@
 <?php
-$username = $_POST['username'];
-$email = $_POST['email'];
-$password = $_POST['password'];
-$username = $_POST['username'];
-$sql = "INSERT INTO users (username, email, password, username) VALUES ('$username', '$email', '$password', '$username')";
 
-if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
-$sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')";
 
-if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+$host = 'localhost';
+$username = 'root';
+$password = '';
+$dbname = 'databse_web';
+
+
+$conn = mysqli_connect($host, $username, $password, $dbname);
+
+if (!$conn) {
+    die("Conexiunea a eșuat: " . mysqli_connect_error());
 }
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+    $usersusername = $_POST['username'];
+    $usersemail = $_POST['email'];
+    $userspassword = $_POST['password'];
 
+    $check_username = "SELECT * FROM users WHERE usersusername = '$usersusername'";
+    $result = mysqli_query($conn, $check_username);
+    if (mysqli_num_rows($result) > 0) {
+        echo "Numele de utilizator există deja.";
+    } else {
+        
+        $sql = "INSERT INTO users (usersusername, usersemail, userspassword) VALUES ('$usersusername', '$usersemail', '$userspassword')";
+
+        
+        if (mysqli_query($conn, $sql)) {
+            echo "Înregistrarea a reușit";
+        } else {
+            echo "Eroare: " . $sql . "<br>" . mysqli_error($conn);
+        }
+    }
+}
+
+
+mysqli_close($conn);
 ?>
